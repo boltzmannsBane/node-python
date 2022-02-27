@@ -53,10 +53,10 @@ app.use(function (err, req, res, next) {
     res.render('error', { error: err });
 });
 
-const PORT = process.env.PORT || 3030;
-app.listen(PORT, async () => {
-    console.log(`Started listening on port ${PORT} ...`);
-    await PythonConnector.invoke('listen');
-});
+// const PORT = process.env.PORT || 3030;
+// app.listen(PORT, async () => {
+//    console.log(`Started listening on port ${PORT} ...`);
+//    await PythonConnector.invoke('listen');
+//});
 
 
